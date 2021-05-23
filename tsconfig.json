@@ -4,7 +4,13 @@
     "compilerOptions": {
         "baseUrl": "./",
         "paths": {
-            "@svg/*": ["src/app/svg/*"]
+            "@svg/*": ["src/app/svg/*"],
+            "@atoms/*": ["src/app/components/atoms/*"],
+            "@molecules/*": ["src/app/components/molecules/*"],
+            "@organisms/*": ["src/app/components/organisms/*"],
+            "@templates/*": ["src/app/components/templates/*"],
+            "@components/*": ["src/app/components/*"],
+            "@pages/*": ["src/app/pages/*"]
         },
         "outDir": "./dist/out-tsc",
         "forceConsistentCasingInFileNames": true,

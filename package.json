@@ -18,7 +18,7 @@
     "@angular/forms": "~12.0.1",
     "@angular/platform-browser": "~12.0.1",
     "@angular/platform-browser-dynamic": "~12.0.1",
-    "@angular/router": "~12.0.1",
+    "@angular/router": "^12.0.1",
     "@ngneat/svg-icon": "^3.2.0",
     "@ngneat/tailwind": "^7.0.3",
     "bluebird": "^3.7.2",

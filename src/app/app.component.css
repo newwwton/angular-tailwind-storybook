@@ -1,7 +1,0 @@
-.btn {
-    @apply px-6 py-3 rounded-lg bg-green-100 hover:bg-green-300 text-green-800 font-semibold;
-}
-
-.footer {
-    @apply bg-gray-700 flex p-3 justify-center bottom-0 fixed w-full;
-}
