@@ -1,4 +1,16 @@
-# AngularTailwindStorybook
+# Angular + Tailwind + Storybook
+
+1. Create the minimal angular project using CLI `ng new <project-name> --minimal` and `cd <project-name>`
+2. Initialize Tailwind using ngneat `npx ng add @ngneat/tailwind` and enable JIT.
+3. Now initialize storybook using `npx sb@next init`
+
+## To add SVG to DOM
+
+1. Put your svg icons in `src/assets/svg` and then `npm run generate-icons`.
+2. This will generate an `svg` folder in `app` and give you its bindings in typescript.
+3. Read [@ngneat/svg-icon](https://github.com/ngneat/svg-icon) for more details.
+
+---
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.1.
 

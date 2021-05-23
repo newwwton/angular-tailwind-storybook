@@ -5,7 +5,9 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "watch": "ng build --watch --configuration development"
+    "watch": "ng build --watch --configuration development",
+    "lint": "tsc --noEmit && eslint . --ext js,ts,json --quiet --fix",
+    "generate-icons": "svg-generator"
   },
   "private": true,
   "dependencies": {
@@ -17,6 +19,9 @@
     "@angular/platform-browser": "~12.0.1",
     "@angular/platform-browser-dynamic": "~12.0.1",
     "@angular/router": "~12.0.1",
+    "@ngneat/svg-icon": "^3.2.0",
+    "@ngneat/tailwind": "^7.0.3",
+    "bluebird": "^3.7.2",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",
     "zone.js": "~0.11.4"
@@ -26,6 +31,27 @@
     "@angular/cli": "~12.0.1",
     "@angular/compiler-cli": "~12.0.1",
     "@types/node": "^12.11.1",
-    "typescript": "~4.2.3"
+    "@typescript-eslint/eslint-plugin": "^4.24.0",
+    "eslint": "^7.27.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.0",
+    "prettier-eslint": "^12.0.0",
+    "tailwindcss": "2.1.2",
+    "typescript": "~4.2.3",
+    "@ngneat/svg-generator": "^2.0.0"
+  },
+  "svgGenerator": {
+    "outputPath": "./src/app/svg",
+    "prefix": "",
+    "srcPath": "./src/assets/svg",
+    "svgoConfig": {
+      "plugins": [
+        {
+          "removeDimensions": true,
+          "cleanupAttrs": true
+        }
+      ]
+    }
   }
 }

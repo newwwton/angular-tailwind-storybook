@@ -1,0 +1,12 @@
+{
+    // For ESLint
+    "eslint.validate": ["ts", "json", "jsonc"],
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+    // For Prettier
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "prettier.requireConfig": true,
+    "cSpell.words": ["systemjs"]
+}
