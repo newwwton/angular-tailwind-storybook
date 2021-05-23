@@ -1,1 +1,6 @@
-<button [type]="buttonType" [class]="buttonClass" [disabled]="buttonDisabled"><ng-content></ng-content></button>
+<a class="btn" target="_blank" [href]="href">
+    <svg-icon [key]="icon" size="lg"></svg-icon>
+    <div>
+        <ng-content></ng-content>
+    </div>
+</a>

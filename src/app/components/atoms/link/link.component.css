@@ -1,0 +1,3 @@
+.link {
+    @apply text-green-600 hover:text-green-700;
+}
