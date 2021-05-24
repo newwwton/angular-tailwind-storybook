@@ -7,7 +7,10 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "lint": "tsc --noEmit && eslint . --ext js,ts,json --quiet --fix",
-    "generate-icons": "svg-generator"
+    "generate-icons": "svg-generator",
+    "docs:json": "compodoc -p ./tsconfig.json -e json -d .",
+    "storybook": "npm run docs:json && start-storybook -p 6006",
+    "build-storybook": "npm run docs:json && build-storybook"
   },
   "private": true,
   "dependencies": {
@@ -30,16 +33,27 @@
     "@angular-devkit/build-angular": "~12.0.1",
     "@angular/cli": "~12.0.1",
     "@angular/compiler-cli": "~12.0.1",
+    "@angular/elements": "^12.0.1",
+    "@babel/core": "^7.14.3",
+    "@compodoc/compodoc": "^1.1.11",
+    "@ngneat/svg-generator": "^2.0.0",
+    "@storybook/addon-actions": "^6.3.0-alpha.41",
+    "@storybook/addon-essentials": "^6.3.0-alpha.41",
+    "@storybook/addon-links": "^6.3.0-alpha.41",
+    "@storybook/angular": "^6.3.0-alpha.41",
+    "@storybook/builder-webpack5": "^6.3.0-alpha.41",
+    "@storybook/manager-webpack5": "^6.3.0-alpha.41",
     "@types/node": "^12.11.1",
     "@typescript-eslint/eslint-plugin": "^4.24.0",
+    "@webcomponents/custom-elements": "^1.4.3",
+    "babel-loader": "^8.2.2",
     "eslint": "^7.27.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
     "prettier": "^2.3.0",
     "prettier-eslint": "^12.0.0",
     "tailwindcss": "2.1.2",
-    "typescript": "~4.2.3",
-    "@ngneat/svg-generator": "^2.0.0"
+    "typescript": "~4.2.3"
   },
   "svgGenerator": {
     "outputPath": "./src/app/svg",
