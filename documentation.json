@@ -127,7 +127,7 @@
                 }
             ],
             "stylesData": "",
-            "templateData": "<div class=\"flex space-x-12 items-center\">\n    <nwn-button icon=\"angular\" href=\"https://angular.io/tutorial\">Angular</nwn-button>\n    <nwn-button icon=\"tailwind\" href=\"https://tailwindcss.com/docs\">Tailwind</nwn-button>\n    <nwn-button icon=\"storybook\" href=\"https://storybook.js.org/docs/angular/\">Storybook</nwn-button>\n</div>\n"
+            "templateData": "<div class=\"flex space-x-12 items-center\">\n    <nwn-button icon=\"angular\" size=\"lg\" href=\"https://angular.io/tutorial\">Angular</nwn-button>\n    <nwn-button icon=\"tailwind\" size=\"lg\" href=\"https://tailwindcss.com/docs\">Tailwind</nwn-button>\n    <nwn-button icon=\"storybook\" size=\"lg\" href=\"https://storybook.js.org/docs/angular/\">Storybook</nwn-button>\n</div>\n"
         },
         {
             "name": "ButtonSectionComponent",
@@ -579,17 +579,17 @@
                 "name": "environment",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/environments/environment.ts",
+                "file": "src/environments/environment.prod.ts",
                 "type": "object",
-                "defaultValue": "{\n    production: false,\n}"
+                "defaultValue": "{\n    production: true,\n}"
             },
             {
                 "name": "environment",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/environments/environment.prod.ts",
+                "file": "src/environments/environment.ts",
                 "type": "object",
-                "defaultValue": "{\n    production: true,\n}"
+                "defaultValue": "{\n    production: false,\n}"
             },
             {
                 "name": "Footer",
@@ -844,16 +844,6 @@
                     "defaultValue": "(args: ButtonSectionComponent) => ({\n    props: { ...args },\n    template: `<nwn-button-section></nwn-button-section>`,\n})"
                 }
             ],
-            "src/environments/environment.ts": [
-                {
-                    "name": "environment",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/environments/environment.ts",
-                    "type": "object",
-                    "defaultValue": "{\n    production: false,\n}"
-                }
-            ],
             "src/environments/environment.prod.ts": [
                 {
                     "name": "environment",
@@ -862,6 +852,16 @@
                     "file": "src/environments/environment.prod.ts",
                     "type": "object",
                     "defaultValue": "{\n    production: true,\n}"
+                }
+            ],
+            "src/environments/environment.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.ts",
+                    "type": "object",
+                    "defaultValue": "{\n    production: false,\n}"
                 }
             ],
             "src/app/components/organisms/footer/footer.stories.ts": [
