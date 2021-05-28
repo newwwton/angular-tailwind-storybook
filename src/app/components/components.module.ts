@@ -28,7 +28,7 @@ import { HeroComponent } from '@organisms/hero/hero.component';
                 lg: '24px',
                 xl: '48px',
             },
-            defaultSize: 'md',
+            defaultSize: 'xl',
             icons: [angularIcon, newwwtonIcon, storybookIcon, tailwindIcon],
         }),
     ],

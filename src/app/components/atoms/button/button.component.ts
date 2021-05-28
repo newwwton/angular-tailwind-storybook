@@ -10,5 +10,8 @@ export class ButtonComponent {
     icon = 'angular';
 
     @Input()
+    size: 'sm' | 'md' | 'lg' | 'xl' = 'xl';
+
+    @Input()
     href = '';
 }

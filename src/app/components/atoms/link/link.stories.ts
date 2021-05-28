@@ -1,0 +1,39 @@
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import { Story, Meta, moduleMetadata } from '@storybook/angular';
+import { CommonModule } from '@angular/common';
+
+// Import Link
+import { LinkComponent } from './link.component';
+
+// Define component
+export default {
+    title: 'Atoms/Link',
+    component: LinkComponent,
+    decorators: [
+        moduleMetadata({
+            imports: [CommonModule],
+        }),
+    ],
+    // Define control types
+    argTypes: {
+        href: { control: 'text' },
+    },
+} as Meta;
+
+// Define template
+const LinkTemplate: Story<LinkComponent> = (args: LinkComponent) => ({
+    props: { ...args },
+    template: `
+    <div style="">
+        <nwn-link>Newwwton</nwn-link>
+    </div>
+    `,
+});
+
+// Create an instances of the component
+// Link to newwwton
+export const LinkToNewwwton = LinkTemplate.bind({});
+LinkToNewwwton.storyName = 'Newwwton Link';
+LinkToNewwwton.args = {
+    href: 'https://newwwton.com',
+};
