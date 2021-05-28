@@ -291,7 +291,7 @@
                 }
             ],
             "stylesData": "",
-            "templateData": "<a class=\"link\" [href]=\"href\">Newwwton</a>\n"
+            "templateData": "<a class=\"link\" [href]=\"href\"><ng-content></ng-content></a>\n"
         },
         {
             "name": "MainComponent",
@@ -520,6 +520,22 @@
     "miscellaneous": {
         "variables": [
             {
+                "name": "AngularButton",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/atoms/button/button.stories.ts",
+                "type": "",
+                "defaultValue": "AngularButtonTemplate.bind({})"
+            },
+            {
+                "name": "AngularButtonTemplate",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/atoms/button/button.stories.ts",
+                "type": "Story<ButtonComponent>",
+                "defaultValue": "(args: ButtonComponent) => ({\n    props: { ...args },\n    template: `<nwn-button [icon]=\"icon\" [size]=\"size\" [href]=\"href\">Angular</nwn-button>`,\n})"
+            },
+            {
                 "name": "angularIcon",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -528,12 +544,36 @@
                 "defaultValue": "{\n    data: `<svg xmlns=\"http://www.w3.org/2000/svg\" preserveAspectRatio=\"xMidYMid\" viewBox=\"0 0 256 272\"><path d=\"M.1 45.522L125.908.697l129.196 44.028-20.919 166.45-108.277 59.966-106.583-59.169L.1 45.522z\" fill=\"#E23237\"/><path d=\"M255.104 44.725L125.908.697v270.444l108.277-59.866 20.919-166.55z\" fill=\"#B52E31\"/><path d=\"M126.107 32.274L47.714 206.693l29.285-.498 15.739-39.347h70.325l17.233 39.845 27.99.498-82.179-174.917zm.2 55.882l26.496 55.383h-49.806l23.31-55.383z\" fill=\"#FFF\"/></svg>`,\n    name: 'angular'\n}"
             },
             {
-                "name": "environment",
+                "name": "ButtonGroup",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/environments/environment.prod.ts",
-                "type": "object",
-                "defaultValue": "{\n    production: true,\n}"
+                "file": "src/app/components/molecules/button-group/button-group.stories.ts",
+                "type": "",
+                "defaultValue": "ButtonGroupTemplate.bind({})"
+            },
+            {
+                "name": "ButtonGroupTemplate",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/molecules/button-group/button-group.stories.ts",
+                "type": "Story<ButtonGroupComponent>",
+                "defaultValue": "(args: ButtonGroupComponent) => ({\n    props: { ...args },\n    template: `<nwn-button-group></nwn-button-group>`,\n})"
+            },
+            {
+                "name": "ButtonSection",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/organisms/button-section/button-section.stories.ts",
+                "type": "",
+                "defaultValue": "ButtonSectionTemplate.bind({})"
+            },
+            {
+                "name": "ButtonSectionTemplate",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/organisms/button-section/button-section.stories.ts",
+                "type": "Story<ButtonSectionComponent>",
+                "defaultValue": "(args: ButtonSectionComponent) => ({\n    props: { ...args },\n    template: `<nwn-button-section></nwn-button-section>`,\n})"
             },
             {
                 "name": "environment",
@@ -544,6 +584,94 @@
                 "defaultValue": "{\n    production: false,\n}"
             },
             {
+                "name": "environment",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/environments/environment.prod.ts",
+                "type": "object",
+                "defaultValue": "{\n    production: true,\n}"
+            },
+            {
+                "name": "Footer",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/organisms/footer/footer.stories.ts",
+                "type": "",
+                "defaultValue": "FooterTemplate.bind({})"
+            },
+            {
+                "name": "FooterTemplate",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/organisms/footer/footer.stories.ts",
+                "type": "Story<FooterComponent>",
+                "defaultValue": "(args: FooterComponent) => ({\n    props: { ...args },\n    template: `<nwn-footer></nwn-footer>`,\n})"
+            },
+            {
+                "name": "Hero",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/pages/main/main.stories.ts",
+                "type": "",
+                "defaultValue": "MainTemplate.bind({})"
+            },
+            {
+                "name": "Hero",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/organisms/hero/hero.stories.ts",
+                "type": "",
+                "defaultValue": "HeroTemplate.bind({})"
+            },
+            {
+                "name": "HeroTemplate",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/organisms/hero/hero.stories.ts",
+                "type": "Story<HeroComponent>",
+                "defaultValue": "(args: HeroComponent) => ({\n    props: { ...args },\n    template: `<nwn-hero [title]=\"title\"></nwn-hero>`,\n})"
+            },
+            {
+                "name": "LinkTemplate",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/atoms/link/link.stories.ts",
+                "type": "Story<LinkComponent>",
+                "defaultValue": "(args: LinkComponent) => ({\n    props: { ...args },\n    template: `\n    <div style=\"\">\n        <nwn-link>Newwwton</nwn-link>\n    </div>\n    `,\n})"
+            },
+            {
+                "name": "LinkToNewwwton",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/atoms/link/link.stories.ts",
+                "type": "",
+                "defaultValue": "LinkTemplate.bind({})"
+            },
+            {
+                "name": "MainTemplate",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/pages/main/main.stories.ts",
+                "type": "Story<MainComponent>",
+                "defaultValue": "(args: MainComponent) => ({\n    props: { ...args },\n    template: `<nwn-main></nwn-main>`,\n})"
+            },
+            {
+                "name": "NewwwtonButton",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/atoms/button/button.stories.ts",
+                "type": "",
+                "defaultValue": "NewwwtonButtonTemplate.bind({})"
+            },
+            {
+                "name": "NewwwtonButtonTemplate",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/atoms/button/button.stories.ts",
+                "type": "Story<ButtonComponent>",
+                "defaultValue": "(args: ButtonComponent) => ({\n    props: { ...args },\n    template: `<nwn-button [icon]=\"icon\" [size]=\"size\" [href]=\"href\">Newwwton</nwn-button>`,\n})"
+            },
+            {
                 "name": "newwwtonIcon",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -552,12 +680,20 @@
                 "defaultValue": "{\n    data: `<svg fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 71 24\"><g clip-path=\"url(#clip0)\"><path d=\"M26.333 14c0-.02-.019-.039-.019-.078L22.415 3.05A1.587 1.587 0 0020.921 2h-3.278c-.679 0-1.28.427-1.494 1.049l-5.8 16.155a1.621 1.621 0 00.194 1.456c.292.427.776.68 1.3.68h3.084c.66 0 1.261-.408 1.494-1.049l2.852-7.709 2.54 6.816c.234.621.835 1.03 1.494 1.03h.02c.679 0 1.26-.428 1.493-1.05l1.533-4.29c.116-.33.116-.72-.02-1.088z\" fill=\"#16A34A\"/><path d=\"M42.336 14.018c-.02-.02-.02-.058-.039-.078L38.398 3.067a1.587 1.587 0 00-1.494-1.049h-3.278c-.679 0-1.3.427-1.513 1.068l-3.957 11.03-1.843 5.125a1.621 1.621 0 00.194 1.457c.291.427.776.68 1.3.68h3.103c.66 0 1.261-.409 1.494-1.05l2.851-7.708 2.561 6.854c.233.622.834 1.03 1.494 1.03h.02c.678 0 1.26-.428 1.493-1.05l1.532-4.29c.136-.389.136-.796-.02-1.146z\" fill=\"#F97316\"/><path d=\"M58.358 14.018c-.02-.02-.02-.058-.038-.078l-3.9-10.873a1.587 1.587 0 00-1.493-1.049h-3.278a1.6 1.6 0 00-1.572 1.243l-.019.039c-.02.038-.02.077-.039.116l-5.664 15.806a1.621 1.621 0 00.194 1.456c.291.427.776.68 1.3.68h3.084c.66 0 1.26-.408 1.494-1.049l2.851-7.709 2.56 6.836c.233.62.835 1.029 1.494 1.029h.02c.679 0 1.26-.428 1.493-1.049l1.533-4.291c.116-.35.116-.758-.02-1.107z\" fill=\"#DB2777\"/><path d=\"M10.31 14.02c-.02-.018-.02-.057-.039-.077L6.372 3.07A1.587 1.587 0 004.88 2.02H1.6c-.523 0-1.008.252-1.319.68-.29.427-.368.97-.174 1.475L5.81 19.458c.233.621.834 1.029 1.493 1.029h.02c.679 0 1.26-.427 1.493-1.049l1.533-4.29c.116-.37.116-.778-.039-1.127z\" fill=\"#2563EB\"/><path d=\"M68.931 2.018h-3.259c-.679 0-1.28.427-1.493 1.049l-3.007 8.33-2.813 7.825a1.621 1.621 0 00.194 1.456c.291.427.776.68 1.3.68h3.084c.66 0 1.261-.408 1.494-1.049l5.955-16.077c.078-.195.116-.408.116-.622a1.558 1.558 0 00-1.57-1.592z\" fill=\"#9333EA\"/></g><defs><clipPath id=\"clip0\"><path fill=\"#fff\" d=\"M0 0h71v24H0z\"/></clipPath></defs></svg>`,\n    name: 'newwwton'\n}"
             },
             {
-                "name": "Primary",
+                "name": "StorybookButton",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/app/components/atoms/button/button.stories.ts",
                 "type": "",
-                "defaultValue": "Template.bind({})"
+                "defaultValue": "StorybookButtonTemplate.bind({})"
+            },
+            {
+                "name": "StorybookButtonTemplate",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/atoms/button/button.stories.ts",
+                "type": "Story<ButtonComponent>",
+                "defaultValue": "(args: ButtonComponent) => ({\n    props: { ...args },\n    template: `<nwn-button [icon]=\"icon\" [size]=\"size\" [href]=\"href\">Storybook</nwn-button>`,\n})"
             },
             {
                 "name": "storybookIcon",
@@ -568,26 +704,100 @@
                 "defaultValue": "{\n    data: `<svg xmlns=\"http://www.w3.org/2000/svg\" style=\"-ms-transform:rotate(360deg);-webkit-transform:rotate(360deg)\" transform=\"rotate(360)\" viewBox=\"0 0 32 32\"><path d=\"M20.735 5.442l.133-3.173 2.72-.168.122 3.23a.216.216 0 01-.047.143.21.21 0 01-.3.029l-1.05-.82-1.243.934a.212.212 0 01-.3-.04.206.206 0 01-.035-.135z\" fill=\"#fff\"/><path d=\"M20.868 2.268l-.133 3.174a.206.206 0 00.043.135.212.212 0 00.3.04l1.243-.934 1.05.82a.21.21 0 00.3-.029.216.216 0 00.047-.143l-.13-3.231 1.566-.1a1.415 1.415 0 011.506 1.321v25.271A1.414 1.414 0 0125.245 30h-.066l-18.948-.844A1.414 1.414 0 014.876 27.8L4 4.69a1.412 1.412 0 011.33-1.458l15.537-.963z\" fill=\"#ff4785\"/><path d=\"M17.253 12.554c0 .547 3.72.285 4.22-.1 0-3.73-2.018-5.69-5.714-5.69s-5.766 1.99-5.766 4.976c0 5.2 7.077 5.3 7.077 8.136a1.127 1.127 0 01-1.258 1.27c-1.127 0-1.573-.572-1.52-2.512 0-.421-4.3-.553-4.43 0-.334 4.7 2.621 6.06 6 6.06 3.276 0 5.845-1.733 5.845-4.868 0-5.573-7.182-5.423-7.182-8.185a1.18 1.18 0 011.337-1.269c.526 0 1.47.092 1.391 2.182z\" fill=\"#fff\"/><path fill=\"rgba(0, 0, 0, 0)\" d=\"M0 0h32v32H0z\"/></svg>`,\n    name: 'storybook'\n}"
             },
             {
+                "name": "TailwindButton",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/atoms/button/button.stories.ts",
+                "type": "",
+                "defaultValue": "TailwindButtonTemplate.bind({})"
+            },
+            {
+                "name": "TailwindButtonTemplate",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/components/atoms/button/button.stories.ts",
+                "type": "Story<ButtonComponent>",
+                "defaultValue": "(args: ButtonComponent) => ({\n    props: { ...args },\n    template: `<nwn-button [icon]=\"icon\" [size]=\"size\" [href]=\"href\">Tailwind</nwn-button>`,\n})"
+            },
+            {
                 "name": "tailwindIcon",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/app/svg/tailwind.ts",
                 "type": "object",
                 "defaultValue": "{\n    data: `<svg xmlns=\"http://www.w3.org/2000/svg\" preserveAspectRatio=\"xMidYMid\" viewBox=\"0 0 256 154\"><defs><linearGradient x1=\"-2.778%\" y1=\"32%\" x2=\"100%\" y2=\"67.556%\" id=\"a\"><stop stop-color=\"#2298BD\" offset=\"0%\"/><stop stop-color=\"#0ED7B5\" offset=\"100%\"/></linearGradient></defs><path d=\"M128 0C93.867 0 72.533 17.067 64 51.2 76.8 34.133 91.733 27.733 108.8 32c9.737 2.434 16.697 9.499 24.401 17.318C145.751 62.057 160.275 76.8 192 76.8c34.133 0 55.467-17.067 64-51.2-12.8 17.067-27.733 23.467-44.8 19.2-9.737-2.434-16.697-9.499-24.401-17.318C174.249 14.743 159.725 0 128 0zM64 76.8C29.867 76.8 8.533 93.867 0 128c12.8-17.067 27.733-23.467 44.8-19.2 9.737 2.434 16.697 9.499 24.401 17.318C81.751 138.857 96.275 153.6 128 153.6c34.133 0 55.467-17.067 64-51.2-12.8 17.067-27.733 23.467-44.8 19.2-9.737-2.434-16.697-9.499-24.401-17.318C110.249 91.543 95.725 76.8 64 76.8z\" fill=\"url(#a)\"/></svg>`,\n    name: 'tailwind'\n}"
-            },
-            {
-                "name": "Template",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/components/atoms/button/button.stories.ts",
-                "type": "Story<ButtonComponent>",
-                "defaultValue": "(args: ButtonComponent) => ({\n    props: { ...args },\n    template: `<nwn-button>This is a button</nwn-button>`,\n})"
             }
         ],
         "functions": [],
         "typealiases": [],
         "enumerations": [],
         "groupedVariables": {
+            "src/app/components/atoms/button/button.stories.ts": [
+                {
+                    "name": "AngularButton",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/atoms/button/button.stories.ts",
+                    "type": "",
+                    "defaultValue": "AngularButtonTemplate.bind({})"
+                },
+                {
+                    "name": "AngularButtonTemplate",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/atoms/button/button.stories.ts",
+                    "type": "Story<ButtonComponent>",
+                    "defaultValue": "(args: ButtonComponent) => ({\n    props: { ...args },\n    template: `<nwn-button [icon]=\"icon\" [size]=\"size\" [href]=\"href\">Angular</nwn-button>`,\n})"
+                },
+                {
+                    "name": "NewwwtonButton",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/atoms/button/button.stories.ts",
+                    "type": "",
+                    "defaultValue": "NewwwtonButtonTemplate.bind({})"
+                },
+                {
+                    "name": "NewwwtonButtonTemplate",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/atoms/button/button.stories.ts",
+                    "type": "Story<ButtonComponent>",
+                    "defaultValue": "(args: ButtonComponent) => ({\n    props: { ...args },\n    template: `<nwn-button [icon]=\"icon\" [size]=\"size\" [href]=\"href\">Newwwton</nwn-button>`,\n})"
+                },
+                {
+                    "name": "StorybookButton",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/atoms/button/button.stories.ts",
+                    "type": "",
+                    "defaultValue": "StorybookButtonTemplate.bind({})"
+                },
+                {
+                    "name": "StorybookButtonTemplate",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/atoms/button/button.stories.ts",
+                    "type": "Story<ButtonComponent>",
+                    "defaultValue": "(args: ButtonComponent) => ({\n    props: { ...args },\n    template: `<nwn-button [icon]=\"icon\" [size]=\"size\" [href]=\"href\">Storybook</nwn-button>`,\n})"
+                },
+                {
+                    "name": "TailwindButton",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/atoms/button/button.stories.ts",
+                    "type": "",
+                    "defaultValue": "TailwindButtonTemplate.bind({})"
+                },
+                {
+                    "name": "TailwindButtonTemplate",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/atoms/button/button.stories.ts",
+                    "type": "Story<ButtonComponent>",
+                    "defaultValue": "(args: ButtonComponent) => ({\n    props: { ...args },\n    template: `<nwn-button [icon]=\"icon\" [size]=\"size\" [href]=\"href\">Tailwind</nwn-button>`,\n})"
+                }
+            ],
             "src/app/svg/angular.ts": [
                 {
                     "name": "angularIcon",
@@ -598,14 +808,40 @@
                     "defaultValue": "{\n    data: `<svg xmlns=\"http://www.w3.org/2000/svg\" preserveAspectRatio=\"xMidYMid\" viewBox=\"0 0 256 272\"><path d=\"M.1 45.522L125.908.697l129.196 44.028-20.919 166.45-108.277 59.966-106.583-59.169L.1 45.522z\" fill=\"#E23237\"/><path d=\"M255.104 44.725L125.908.697v270.444l108.277-59.866 20.919-166.55z\" fill=\"#B52E31\"/><path d=\"M126.107 32.274L47.714 206.693l29.285-.498 15.739-39.347h70.325l17.233 39.845 27.99.498-82.179-174.917zm.2 55.882l26.496 55.383h-49.806l23.31-55.383z\" fill=\"#FFF\"/></svg>`,\n    name: 'angular'\n}"
                 }
             ],
-            "src/environments/environment.prod.ts": [
+            "src/app/components/molecules/button-group/button-group.stories.ts": [
                 {
-                    "name": "environment",
+                    "name": "ButtonGroup",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/environments/environment.prod.ts",
-                    "type": "object",
-                    "defaultValue": "{\n    production: true,\n}"
+                    "file": "src/app/components/molecules/button-group/button-group.stories.ts",
+                    "type": "",
+                    "defaultValue": "ButtonGroupTemplate.bind({})"
+                },
+                {
+                    "name": "ButtonGroupTemplate",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/molecules/button-group/button-group.stories.ts",
+                    "type": "Story<ButtonGroupComponent>",
+                    "defaultValue": "(args: ButtonGroupComponent) => ({\n    props: { ...args },\n    template: `<nwn-button-group></nwn-button-group>`,\n})"
+                }
+            ],
+            "src/app/components/organisms/button-section/button-section.stories.ts": [
+                {
+                    "name": "ButtonSection",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/organisms/button-section/button-section.stories.ts",
+                    "type": "",
+                    "defaultValue": "ButtonSectionTemplate.bind({})"
+                },
+                {
+                    "name": "ButtonSectionTemplate",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/organisms/button-section/button-section.stories.ts",
+                    "type": "Story<ButtonSectionComponent>",
+                    "defaultValue": "(args: ButtonSectionComponent) => ({\n    props: { ...args },\n    template: `<nwn-button-section></nwn-button-section>`,\n})"
                 }
             ],
             "src/environments/environment.ts": [
@@ -618,6 +854,88 @@
                     "defaultValue": "{\n    production: false,\n}"
                 }
             ],
+            "src/environments/environment.prod.ts": [
+                {
+                    "name": "environment",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/environments/environment.prod.ts",
+                    "type": "object",
+                    "defaultValue": "{\n    production: true,\n}"
+                }
+            ],
+            "src/app/components/organisms/footer/footer.stories.ts": [
+                {
+                    "name": "Footer",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/organisms/footer/footer.stories.ts",
+                    "type": "",
+                    "defaultValue": "FooterTemplate.bind({})"
+                },
+                {
+                    "name": "FooterTemplate",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/organisms/footer/footer.stories.ts",
+                    "type": "Story<FooterComponent>",
+                    "defaultValue": "(args: FooterComponent) => ({\n    props: { ...args },\n    template: `<nwn-footer></nwn-footer>`,\n})"
+                }
+            ],
+            "src/app/pages/main/main.stories.ts": [
+                {
+                    "name": "Hero",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/pages/main/main.stories.ts",
+                    "type": "",
+                    "defaultValue": "MainTemplate.bind({})"
+                },
+                {
+                    "name": "MainTemplate",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/pages/main/main.stories.ts",
+                    "type": "Story<MainComponent>",
+                    "defaultValue": "(args: MainComponent) => ({\n    props: { ...args },\n    template: `<nwn-main></nwn-main>`,\n})"
+                }
+            ],
+            "src/app/components/organisms/hero/hero.stories.ts": [
+                {
+                    "name": "Hero",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/organisms/hero/hero.stories.ts",
+                    "type": "",
+                    "defaultValue": "HeroTemplate.bind({})"
+                },
+                {
+                    "name": "HeroTemplate",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/organisms/hero/hero.stories.ts",
+                    "type": "Story<HeroComponent>",
+                    "defaultValue": "(args: HeroComponent) => ({\n    props: { ...args },\n    template: `<nwn-hero [title]=\"title\"></nwn-hero>`,\n})"
+                }
+            ],
+            "src/app/components/atoms/link/link.stories.ts": [
+                {
+                    "name": "LinkTemplate",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/atoms/link/link.stories.ts",
+                    "type": "Story<LinkComponent>",
+                    "defaultValue": "(args: LinkComponent) => ({\n    props: { ...args },\n    template: `\n    <div style=\"\">\n        <nwn-link>Newwwton</nwn-link>\n    </div>\n    `,\n})"
+                },
+                {
+                    "name": "LinkToNewwwton",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/components/atoms/link/link.stories.ts",
+                    "type": "",
+                    "defaultValue": "LinkTemplate.bind({})"
+                }
+            ],
             "src/app/svg/newwwton.ts": [
                 {
                     "name": "newwwtonIcon",
@@ -626,24 +944,6 @@
                     "file": "src/app/svg/newwwton.ts",
                     "type": "object",
                     "defaultValue": "{\n    data: `<svg fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 71 24\"><g clip-path=\"url(#clip0)\"><path d=\"M26.333 14c0-.02-.019-.039-.019-.078L22.415 3.05A1.587 1.587 0 0020.921 2h-3.278c-.679 0-1.28.427-1.494 1.049l-5.8 16.155a1.621 1.621 0 00.194 1.456c.292.427.776.68 1.3.68h3.084c.66 0 1.261-.408 1.494-1.049l2.852-7.709 2.54 6.816c.234.621.835 1.03 1.494 1.03h.02c.679 0 1.26-.428 1.493-1.05l1.533-4.29c.116-.33.116-.72-.02-1.088z\" fill=\"#16A34A\"/><path d=\"M42.336 14.018c-.02-.02-.02-.058-.039-.078L38.398 3.067a1.587 1.587 0 00-1.494-1.049h-3.278c-.679 0-1.3.427-1.513 1.068l-3.957 11.03-1.843 5.125a1.621 1.621 0 00.194 1.457c.291.427.776.68 1.3.68h3.103c.66 0 1.261-.409 1.494-1.05l2.851-7.708 2.561 6.854c.233.622.834 1.03 1.494 1.03h.02c.678 0 1.26-.428 1.493-1.05l1.532-4.29c.136-.389.136-.796-.02-1.146z\" fill=\"#F97316\"/><path d=\"M58.358 14.018c-.02-.02-.02-.058-.038-.078l-3.9-10.873a1.587 1.587 0 00-1.493-1.049h-3.278a1.6 1.6 0 00-1.572 1.243l-.019.039c-.02.038-.02.077-.039.116l-5.664 15.806a1.621 1.621 0 00.194 1.456c.291.427.776.68 1.3.68h3.084c.66 0 1.26-.408 1.494-1.049l2.851-7.709 2.56 6.836c.233.62.835 1.029 1.494 1.029h.02c.679 0 1.26-.428 1.493-1.049l1.533-4.291c.116-.35.116-.758-.02-1.107z\" fill=\"#DB2777\"/><path d=\"M10.31 14.02c-.02-.018-.02-.057-.039-.077L6.372 3.07A1.587 1.587 0 004.88 2.02H1.6c-.523 0-1.008.252-1.319.68-.29.427-.368.97-.174 1.475L5.81 19.458c.233.621.834 1.029 1.493 1.029h.02c.679 0 1.26-.427 1.493-1.049l1.533-4.29c.116-.37.116-.778-.039-1.127z\" fill=\"#2563EB\"/><path d=\"M68.931 2.018h-3.259c-.679 0-1.28.427-1.493 1.049l-3.007 8.33-2.813 7.825a1.621 1.621 0 00.194 1.456c.291.427.776.68 1.3.68h3.084c.66 0 1.261-.408 1.494-1.049l5.955-16.077c.078-.195.116-.408.116-.622a1.558 1.558 0 00-1.57-1.592z\" fill=\"#9333EA\"/></g><defs><clipPath id=\"clip0\"><path fill=\"#fff\" d=\"M0 0h71v24H0z\"/></clipPath></defs></svg>`,\n    name: 'newwwton'\n}"
-                }
-            ],
-            "src/app/components/atoms/button/button.stories.ts": [
-                {
-                    "name": "Primary",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/atoms/button/button.stories.ts",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/components/atoms/button/button.stories.ts",
-                    "type": "Story<ButtonComponent>",
-                    "defaultValue": "(args: ButtonComponent) => ({\n    props: { ...args },\n    template: `<nwn-button>This is a button</nwn-button>`,\n})"
                 }
             ],
             "src/app/svg/storybook.ts": [
@@ -717,7 +1017,7 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "Primary",
+                "name": "AngularButton",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -727,7 +1027,67 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "Template",
+                "name": "AngularButtonTemplate",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/atoms/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "NewwwtonButton",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/atoms/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "NewwwtonButtonTemplate",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/atoms/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "StorybookButton",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/atoms/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "StorybookButtonTemplate",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/atoms/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "TailwindButton",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/atoms/button/button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "TailwindButtonTemplate",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -742,10 +1102,50 @@
                 "status": "low"
             },
             {
+                "filePath": "src/app/components/atoms/link/link.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LinkTemplate",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/atoms/link/link.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LinkToNewwwton",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "src/app/components/molecules/button-group/button-group.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "ButtonGroupComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/molecules/button-group/button-group.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ButtonGroup",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/molecules/button-group/button-group.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ButtonGroupTemplate",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -760,10 +1160,50 @@
                 "status": "low"
             },
             {
+                "filePath": "src/app/components/organisms/button-section/button-section.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ButtonSection",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/organisms/button-section/button-section.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ButtonSectionTemplate",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "src/app/components/organisms/footer/footer.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "FooterComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/organisms/footer/footer.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Footer",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/organisms/footer/footer.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "FooterTemplate",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -778,12 +1218,52 @@
                 "status": "low"
             },
             {
+                "filePath": "src/app/components/organisms/hero/hero.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Hero",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/organisms/hero/hero.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "HeroTemplate",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
                 "filePath": "src/app/pages/main/main.component.ts",
                 "type": "component",
                 "linktype": "component",
                 "name": "MainComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/main/main.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Hero",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/pages/main/main.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "MainTemplate",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {

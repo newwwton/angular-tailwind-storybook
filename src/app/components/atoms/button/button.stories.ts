@@ -16,6 +16,10 @@ import { ButtonComponent } from './button.component';
 export default {
     title: 'Atoms/Button',
     component: ButtonComponent,
+    // Position the component to the center as otherwise we have set a global fullscreen layout to avoid default padding provided by SB6
+    parameters: {
+        layout: 'centered',
+    },
     decorators: [
         moduleMetadata({
             imports: [

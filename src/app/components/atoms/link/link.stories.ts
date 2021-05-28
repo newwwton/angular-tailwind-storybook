@@ -9,6 +9,10 @@ import { LinkComponent } from './link.component';
 export default {
     title: 'Atoms/Link',
     component: LinkComponent,
+    // Position the component to the center as otherwise we have set a global fullscreen layout to avoid default padding provided by SB6
+    parameters: {
+        layout: 'centered',
+    },
     decorators: [
         moduleMetadata({
             imports: [CommonModule],

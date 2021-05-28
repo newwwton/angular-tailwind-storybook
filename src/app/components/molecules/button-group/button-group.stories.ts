@@ -19,6 +19,10 @@ import { ButtonGroupComponent } from './button-group.component';
 export default {
     title: 'Molecules/ButtonGroup',
     component: ButtonGroupComponent,
+    // Position the component to the center as otherwise we have set a global fullscreen layout to avoid default padding provided by SB6
+    parameters: {
+        layout: 'centered',
+    },
     decorators: [
         moduleMetadata({
             imports: [
