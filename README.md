@@ -1,6 +1,10 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2964dd0a-3a3b-41c4-8860-2bec3e7ce7e5/deploy-status)](https://app.netlify.com/sites/angular-tailwind-storybook/deploys)
+
 # A starter template for Angular, Tailwind, and Storybook
 
 ![Angular + Tailwind + Storybook starter template](./src/assets/newwwton/Template.jpg)
+
+Visit the components in live storybook [here](https://angular-tailwind-storybook.netlify.app/).
 
 Follow the steps to create components and pages
 
