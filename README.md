@@ -1,18 +1,16 @@
-# Angular + Tailwind + Storybook
+# A starter template for Angular, Tailwind, and Storybook
+
+![Angular + Tailwind + Storybook starter template](./src/assets/newwwton/Template.jpg)
 
 Follow the steps to create components and pages
 
 ### Create new Component
 
 1. Use this command to generate new component `ng g c components/<component-name>`
-2. Remove its entry from `app.module.ts`
-3. Create its entry in `components/components.module.ts`
 
 ### Create new Page
 
 1. Use this command to generate new page `ng g c pages/<page-name>`
-2. Remove its entry from `app.module.ts`
-3. Create its entry in `pages/pages.module.ts`
 
 ### To add SVG to DOM
 
