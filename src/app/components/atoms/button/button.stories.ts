@@ -41,11 +41,7 @@ export default {
         }),
     ],
     // Define control types
-    argTypes: {
-        icon: { control: 'text' },
-        size: { control: 'select' },
-        href: { control: 'text' },
-    },
+    // You dont have to define any control types, as they are already handled by SB 6.3
 } as Meta;
 
 // Define template
