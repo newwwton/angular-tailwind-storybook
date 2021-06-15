@@ -38,7 +38,7 @@
         },
         {
             "name": "ButtonComponent",
-            "id": "component-ButtonComponent-79fa3fc41e6493d5bb15744060cad56b",
+            "id": "component-ButtonComponent-1cbebdae16a508bef102b91cf651fc66",
             "file": "src/app/components/atoms/button/button.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -80,7 +80,7 @@
             "description": "",
             "rawdescription": "",
             "type": "component",
-            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n    selector: 'nwn-button',\n    templateUrl: './button.component.html',\n    styleUrls: ['./button.component.css'],\n})\nexport class ButtonComponent {\n    @Input()\n    icon = 'angular';\n\n    @Input()\n    size: 'sm' | 'md' | 'lg' | 'xl' = 'xl';\n\n    @Input()\n    href = '';\n}\n",
+            "sourceCode": "import { Component, Input } from '@angular/core';\r\n\r\n@Component({\r\n    selector: 'nwn-button',\r\n    templateUrl: './button.component.html',\r\n    styleUrls: ['./button.component.css'],\r\n})\r\nexport class ButtonComponent {\r\n    @Input()\r\n    icon = 'angular';\r\n\r\n    @Input()\r\n    size: 'sm' | 'md' | 'lg' | 'xl' = 'xl';\r\n\r\n    @Input()\r\n    href = '';\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -89,7 +89,7 @@
                 }
             ],
             "stylesData": "",
-            "templateData": "<a class=\"btn\" target=\"_blank\" [href]=\"href\">\n    <svg-icon [key]=\"icon\" [size]=\"size\"></svg-icon>\n    <div>\n        <ng-content></ng-content>\n    </div>\n</a>\n"
+            "templateData": "<a class=\"btn\" target=\"_blank\" [href]=\"href\">\r\n    <svg-icon [key]=\"icon\" [size]=\"size\"></svg-icon>\r\n    <div>\r\n        <ng-content></ng-content>\r\n    </div>\r\n</a>\r\n"
         },
         {
             "name": "ButtonGroupComponent",
@@ -127,7 +127,7 @@
                 }
             ],
             "stylesData": "",
-            "templateData": "<div class=\"flex space-x-12 items-center\">\n    <nwn-button icon=\"angular\" size=\"lg\" href=\"https://angular.io/tutorial\">Angular</nwn-button>\n    <nwn-button icon=\"tailwind\" size=\"lg\" href=\"https://tailwindcss.com/docs\">Tailwind</nwn-button>\n    <nwn-button icon=\"storybook\" size=\"lg\" href=\"https://storybook.js.org/docs/angular/\">Storybook</nwn-button>\n</div>\n"
+            "templateData": "<div class=\"flex space-x-12 items-center\">\r\n    <nwn-button icon=\"angular\" size=\"lg\" href=\"https://angular.io/tutorial\">Angular</nwn-button>\r\n    <nwn-button icon=\"tailwind\" size=\"lg\" href=\"https://tailwindcss.com/docs\">Tailwind</nwn-button>\r\n    <nwn-button icon=\"storybook\" size=\"lg\" href=\"https://storybook.js.org/docs/angular/\">Storybook</nwn-button>\r\n</div>\r\n"
         },
         {
             "name": "ButtonSectionComponent",
@@ -291,7 +291,7 @@
                 }
             ],
             "stylesData": "",
-            "templateData": "<a class=\"link\" [href]=\"href\"><ng-content></ng-content></a>\n"
+            "templateData": "<a class=\"link\" [href]=\"href\"><ng-content></ng-content></a>\r\n"
         },
         {
             "name": "MainComponent",
@@ -557,7 +557,7 @@
                 "subtype": "variable",
                 "file": "src/app/components/molecules/button-group/button-group.stories.ts",
                 "type": "Story<ButtonGroupComponent>",
-                "defaultValue": "(args: ButtonGroupComponent) => ({\n    props: { ...args },\n    template: `<nwn-button-group></nwn-button-group>`,\n})"
+                "defaultValue": "(args: ButtonGroupComponent) => ({\r\n    props: { ...args },\r\n    template: `<nwn-button-group></nwn-button-group>`,\r\n})"
             },
             {
                 "name": "ButtonSection",
@@ -573,7 +573,7 @@
                 "subtype": "variable",
                 "file": "src/app/components/organisms/button-section/button-section.stories.ts",
                 "type": "Story<ButtonSectionComponent>",
-                "defaultValue": "(args: ButtonSectionComponent) => ({\n    props: { ...args },\n    template: `<nwn-button-section></nwn-button-section>`,\n})"
+                "defaultValue": "(args: ButtonSectionComponent) => ({\r\n    props: { ...args },\r\n    template: `<nwn-button-section></nwn-button-section>`,\r\n})"
             },
             {
                 "name": "environment",
@@ -605,7 +605,7 @@
                 "subtype": "variable",
                 "file": "src/app/components/organisms/footer/footer.stories.ts",
                 "type": "Story<FooterComponent>",
-                "defaultValue": "(args: FooterComponent) => ({\n    props: { ...args },\n    template: `<nwn-footer></nwn-footer>`,\n})"
+                "defaultValue": "(args: FooterComponent) => ({\r\n    props: { ...args },\r\n    template: `<nwn-footer></nwn-footer>`,\r\n})"
             },
             {
                 "name": "Hero",
@@ -823,7 +823,7 @@
                     "subtype": "variable",
                     "file": "src/app/components/molecules/button-group/button-group.stories.ts",
                     "type": "Story<ButtonGroupComponent>",
-                    "defaultValue": "(args: ButtonGroupComponent) => ({\n    props: { ...args },\n    template: `<nwn-button-group></nwn-button-group>`,\n})"
+                    "defaultValue": "(args: ButtonGroupComponent) => ({\r\n    props: { ...args },\r\n    template: `<nwn-button-group></nwn-button-group>`,\r\n})"
                 }
             ],
             "src/app/components/organisms/button-section/button-section.stories.ts": [
@@ -841,7 +841,7 @@
                     "subtype": "variable",
                     "file": "src/app/components/organisms/button-section/button-section.stories.ts",
                     "type": "Story<ButtonSectionComponent>",
-                    "defaultValue": "(args: ButtonSectionComponent) => ({\n    props: { ...args },\n    template: `<nwn-button-section></nwn-button-section>`,\n})"
+                    "defaultValue": "(args: ButtonSectionComponent) => ({\r\n    props: { ...args },\r\n    template: `<nwn-button-section></nwn-button-section>`,\r\n})"
                 }
             ],
             "src/environments/environment.prod.ts": [
@@ -879,7 +879,7 @@
                     "subtype": "variable",
                     "file": "src/app/components/organisms/footer/footer.stories.ts",
                     "type": "Story<FooterComponent>",
-                    "defaultValue": "(args: FooterComponent) => ({\n    props: { ...args },\n    template: `<nwn-footer></nwn-footer>`,\n})"
+                    "defaultValue": "(args: FooterComponent) => ({\r\n    props: { ...args },\r\n    template: `<nwn-footer></nwn-footer>`,\r\n})"
                 }
             ],
             "src/app/pages/main/main.stories.ts": [
